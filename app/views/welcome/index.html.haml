@@ -1,1 +1,32 @@
-%h1 This is the welcome placeholder 
+#banner
+	.banner_content
+		%h1 NoteNote
+		%p Your online notebook. Never forget and idea again.
+		%button= link_to "Sign Up", new_user_registration_path
+#testimonial
+	.wrapper
+		%p.quote "Its Just an awesome App"
+		%p.name - Watson Kambo
+
+#callouts
+	.callaout_inner
+		.wrapper
+			.callout
+				%h2 Finances
+				%p All these are Financial notes lets see where they end up.
+			.callout
+				%h2 Todo List
+				%p All these are Todo's lets see where they end up.
+			.callout
+				%h2 Project Status
+				%p All these are Projects lets see where they end up.
+
+#bottom_cta
+	.wrapper
+		%h2 For Realz!!
+		%p I Want you to use this App ... If you won't, I will find you!
+		%button= link_to "Click Meee!!!", new_user_registration_path
+
+%footer
+	%p &copy; Watson Kambo 2017
+
