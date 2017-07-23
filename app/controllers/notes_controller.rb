@@ -10,11 +10,15 @@ class NotesController < ApplicationController
 	end
 
 	def new
-		@note = Note.new
+		#@note = Note.new
+		@note = current_user.notes.build
 	end
 
 	def create
-		@note = Note.new(note_params)
+		#@note = Note.new(note_params)
+		@note = current_user.notes.build(note_params)
+
+		
 
 		if @note.save
 			redirect_to @note
@@ -24,7 +28,7 @@ class NotesController < ApplicationController
 	end
 
 	def edit
-		
+
 	end
 
 	def update
